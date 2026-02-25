@@ -9,7 +9,33 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The_Mansion.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The_Mansion" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="3148A58F-1C26-4B3C-92E5-3CE3133CA4A3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
+<tw-storydata name="The_Mansion" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="3148A58F-1C26-4B3C-92E5-3CE3133CA4A3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Το κεντρικό container */
+.image-text-stretch {
+  display: flex;
+  align-items: stretch; /* Κάνει και τις δύο στήλες να έχουν το ίδιο ύψος */
+}
+
+/* Το αριστερό κουτί με την εικόνα (με το διακεκομμένο περίγραμμα) */
+.left-image-box {
+  flex: 0 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* Κρατάει την εικόνα κεντραρισμένη κάθετα, όσο κι αν ψηλώσει το κουτί */
+  min-width: 50px;        /* Εξασφαλίζει ένα ελάχιστο πλάτος για το κουτί */
+}
+
+/* Ρυθμίσεις για την ίδια την εικόνα */
+.left-image-box img {
+  max-width: 100%; /* Προσαρμόζεται στο πλάτος του κουτιού */
+  height: auto;
+}
+
+/* Το δεξί τμήμα με το κείμενο */
+.right-text {
+  flex: 1;
+  line-height: 1.3;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
     var audio = new Audio(&#39;https://github.com/fuhton/piano-mp3/blob/master/piano-mp3/A0.mp3?raw=true&#39;);
     audio.play();
     
@@ -26,7 +52,7 @@
 
 [[Άρης]] 
 
-&lt;img src=&quot;https://github.com/jigsawpieces/dog-api-images/blob/main/akita/512px-Ainu-Dog.jpg?raw=true&quot;&gt; </tw-passagedata><tw-passagedata pid="2" name="Summer" tags="" position="750,25" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+&lt;img src=&quot;the_mansion_the_sims_2.jpg&quot; width=950 height=550&gt; </tw-passagedata><tw-passagedata pid="2" name="Summer" tags="" position="750,25" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία: &#39;&#39;Εσωτερικό  
 &#39;&#39;Χρόνος:&#39;&#39;  Νύχτα 
 
@@ -66,15 +92,21 @@
 &#39;&#39;Αφηγηματικό Μέρος – Περιγραφή&#39;&#39;
 Ενστικτωδώς ετοιμάζει το περίστροφό του, δίχως όμως να το τραβήξει από την θήκη του.
 
-[[Άρης | Άρης1]]</tw-passagedata><tw-passagedata pid="5" name="Άρης" tags="" position="950,25" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Άρης | Άρης1]]</tw-passagedata><tw-passagedata pid="5" name="Άρης" tags="" position="950,25" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+  &lt;div class=&quot;left-image-box&quot;&gt;
+    &lt;img src=&quot;aris_drink.jpg&quot; alt=&quot;aris_drink&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;right-text&quot;&gt;
+    &#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Ο Άρης στέκεται δίπλα από το τζάκι παρατηρώντας τον χώρο απολαμβάνοντας ένα Macallan No 6 Lalique Decanter Single Malt. Φορώντας τα ακουστικά του. Το βλέμμα του γυρνάει διαρκώς μέσα στον χώρο, παρατηρώντας όλα τα σημεία από τα οποία θα μπορούσε να έρθει ο κ. Evergreen. Πίσω από τα παράθυρα διακρίνεται ο ανθηρός κήπος με τα πολύχρωμα λουλούδια τα οποία φωτίζονται ανεπαίσθητα από το φως του φεγγαριού και τα μικρά φαναράκια του κήπου σε τυχαία σημεία.
 
-&#39;&#39;Διάλογος / Δράση &#39;&#39;
-&#39;&#39;Άρης: &#39;&#39;Γειά σας… Το όνομα μου είναι Άρης. Χαίρομαι που είμαστε όλοι εδώ. Αναρωτιέμαι τι να μας θέλει ο k. Evergreen και μας κάλεσε τόσο ξαφνικά.
+ &#39;&#39;Διάλογος / Δράση &#39;&#39;
+ &#39;&#39;Άρης:&#39;&#39;Γειά σας… Το όνομα μου είναι Άρης. Χαίρομαι που είμαστε όλοι εδώ. Αναρωτιέμαι τι να μας θέλει ο k. Evergreen και μας κάλεσε τόσο ξαφνικά.
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Πίνει το ποτό του αναπολώντας το παρελθόν.
@@ -83,7 +115,11 @@
 &#39;&#39;Άρης: &#39;&#39;Είδε κανείς κάποιον από το προσωπικό;  Έχουν ώρα να φανούν... οι πόρτες και τα παράθυρα είναι κλειστά και κλειδωμένα, προσπάθησα να τα ανοίξω να πάρουμε λίγο αέρα. Ξέρει κάποιος κάτι γι’ αυτό;.
 Νομίζω ότι έχουμε εγκλωβιστεί μέσα. Αναρωτιέμαι…// ‘’Δεν ακούω κανένα σήμα’’ //
 
-[[Summer]]</tw-passagedata><tw-passagedata pid="6" name=" Άρης1" tags="" position="350,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Summer]]
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="6" name=" Άρης1" tags="" position="350,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
