@@ -20,7 +20,6 @@ tw-link {
 }
 
 body, tw-story[tags~="the-mansion-bg-fade"] {
-  /* Αντικατέστησε το URL με το link της δικής σου εικόνας */
   background-image: url("mansion_fade.jpg");
   
   /* Κάνει την εικόνα να καλύπτει όλη την οθόνη χωρίς να επαναλαμβάνεται σαν πλακάκι */
@@ -32,6 +31,30 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
   
   /* (Προαιρετικό) Κρατάει την εικόνα σταθερή αν το κείμενο είναι μεγάλο και κάνεις scroll */
   background-attachment: fixed; 
+}
+
+
+tw-story[tags~="the-mansion-bg-fade-eqk"]{
+	 background-image: url("mansion_fade_after_earthquake.jpg");
+   /* Κάνει την εικόνα να καλύπτει όλη την οθόνη χωρίς να επαναλαμβάνεται σαν πλακάκι */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  /* Κεντράρει την εικόνα */
+  background-position: center;
+  
+  /* (Προαιρετικό) Κρατάει την εικόνα σταθερή αν το κείμενο είναι μεγάλο και κάνεις scroll */
+  background-attachment: fixed; 
+}
+
+tw-story[tags~="white-portals"],tw-story[tags~="white-portals"] tw-link{
+ background: #f5f5f5;
+ color: #0f0f0f;
+}
+
+tw-story[tags~="white-portals"] tw-link:hover {
+
+  color: #4169e1;
 }
 
 /* Το κεντρικό container */
@@ -76,7 +99,7 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 
 /* Τι γίνεται όταν το ποντίκι πάει πάνω στην εικόνα */
 .zoom-hover:hover {
-  transform: scale(1.6); /* Μεγαλώνει την εικόνα κατά 60%. Μπορείς να το κάνεις 1.5, 1.8, 2.0 κλπ. */
+  transform: scale(2); /* Μεγαλώνει την εικόνα κατά 60%. Μπορείς να το κάνεις 1.5, 1.8, 2.0 κλπ. */
   z-index: 100;          /* Βεβαιώνει ότι η εικόνα θα βγει ΠΑΝΩ από το κείμενο καθώς μεγαλώνει */
 }
 
@@ -87,7 +110,14 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
   padding: 15px;
   color: #c1c4c9;
   font-size: 1.2rem
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="the-mansion-bg-fade" color="red"></tw-tag><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
+}
+
+.right-text-no-color {
+  flex: 1;
+  line-height: 1.3;
+  padding: 15px;
+  font-size: 1.2rem
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="the-mansion-bg-fade" color="red"></tw-tag><tw-tag name="bg-character" color="green"></tw-tag><tw-tag name="alexis-scared-summer" color="blue"></tw-tag><tw-tag name="the-mansion-bg-fade-eqk" color="orange"></tw-tag><tw-tag name="white-portals" color="purple"></tw-tag><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
     var audio = new Audio(&#39;https://github.com/fuhton/piano-mp3/blob/master/piano-mp3/A0.mp3?raw=true&#39;);
     audio.play();
     
@@ -267,9 +297,15 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 Πριν προλάβει να ολοκληρώσει την ερώτηση. Ένας μεγάλος σεισμός ταρακουνάει τους χαρακτήρες και πέφτουν κάτω, το δωμάτιο χωρίζεται στα δυο με μια σχισμή αρχίζει να κινείται μια δεξιά στο χώρο του σαλονιού με τον Άρη, τη Summer και τον Edward και μια αριστερά προς τον Αλέξη σαν ζυγαριά. Τα πάντα πέφτουν στο πάτωμα, βιβλία, τα μαρμάρινα λιοντάρια του τζακιού και οι καρέκλες... Μόνο ένα στέκεται άθικτο όσο δυνατό και αν είναι το τράνταγμα. Ο πίνακς πάνω από το τζάκι «Μερικές φορές το μόνο που σε δεσμεύει είναι ο εαυτός  σου».
 
 [[Αλέξης | Αλέξης1]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name=" Αλέξης1" tags="" position="750,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name=" Αλέξης1" tags="bg-character alexis-scared-summer the-mansion-bg-fade-eqk" position="750,150" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+  &lt;div class=&quot;left-image-box&quot;&gt;
+    &lt;img class=&quot;img-50&quot; src=&quot;alexis_summer_earthquake.png&quot; width=525 height=225&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
-&#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
+&#39;&#39;Χρόνος:&#39;&#39; Νύχτα     
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Ο Αλέξης φοβημσμένος απο τα όσα βλέπει, το βλέμμα στρέφεται απότομα προς της Summer. Χωρίς να ξέρει σχεδόν τίποτα για αυτή.  Κάτι μέσα του, του λέει ότι πρέπει να την προστατέψει. Πρόθυμος να βοηθήσει για το γρίφο μιας και έχει πάρει απόφαση ότι έχει μπλέξει σε μια παγίδα.  Εκεί που πάει να μιλήσει για να μάθει τι πραγματικά γίνεται,  έρχεται ο σεισμός. 
@@ -281,8 +317,9 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39;
 Πιο έντονο πλέον το ενδιαφέρον του για την Summer, επιδιώκει να περάσει στην απέναντι πλευρά, αλλά οι συνεχείς μετασεισμοί δεν τον αφήνουν να κουνηθεί.
 
-
-[[Edward | Edward1]]</tw-passagedata><tw-passagedata pid="9" name=" Edward1" tags="" position="950,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Edward | Edward1]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name=" Edward1" tags="the-mansion-bg-fade-eqk" position="950,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -539,7 +576,8 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
  Παιδία φαίνεται να  μας έμεινε μονο το παραθυράκι για την απόλυτη &quot;ελευθερία&quot; . Τι κάνουμε; Είμαστε έτοιμοι για την &quot;έξοδο&quot; ή θα μπούμε σε μια νέα τάξη γεγονότων;
 
-[[Edward | Edward5]]</tw-passagedata><tw-passagedata pid="25" name=" Edward5" tags="" position="950,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Edward | Edward5]]</tw-passagedata><tw-passagedata pid="25" name=" Edward5" tags="white-portals" position="950,650" size="100,100">&lt;div class=&quot;right-text-no-color&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό \ Εξωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Πρωί
 
@@ -552,15 +590,26 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 “Αφηγηματικό μέρος – Περιγραφή&#39;&#39; 
 Χωρίς κανέναν δισταγμό πλέον περνάνε όλοι από το παραθυράκι και βγαίνουν στον κήπο ο οποίος είναι ίδιος με αυτόν που έβλεπαν νωρίτερα έξω από το σαλόνι. Με μία και μόνο διαφορά, στο κέντρο του βρίσκεται ένα μεγάλο campfire και δίπλα του 4 portals όπως ακριβώς είπε η Summer. Όμως ο Edward δεν βλέπει τον Reaper.
 
+&lt;div class=&quot;left-image-box&quot;&gt;
+    &lt;img class=&quot;zoom-hover&quot; src=&quot;edward_white_portals.png&quot; width=850 height=350&gt;
+  &lt;/div&gt;
+
 &#39;&#39;Διάλογος / Δράση&#39;&#39; 
 &#39;&#39;Edward:&#39;&#39; // Ο Reaper φαίνεται να με καθοδήγησε σωστά όμως δεν μπορώ να τον δω, ίσως μόνο η Summer να μπορεί να τον δει.// Μάλλον ο καθένας μας πρέπει να μπει στο δικό του portal. Τι λέτε περνάμε? …….
 
-[[To be continued]]</tw-passagedata><tw-passagedata pid="26" name="To be continued" tags="" position="1150,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
-&#39;&#39;Τοποθεσία:&#39;&#39; Εξωτερκό
-&#39;&#39;Χρόνος:&#39;&#39; Πρωί 
-
+[[To be continued]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="To be continued" tags="" position="1150,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+&#39;&#39;Τοποθεσία:&#39;&#39; Εξωτερκό / Εσωτερικό
+&#39;&#39;Χρόνος:&#39;&#39; Πρωί / Νύχτα
+&lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50 zoom-hover&quot; src=&quot;the_mansion_the_sims_2.jpg&quot; width=500 height=200&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39;
-Μπροστά στα παλλαιομένα πέτρινα portals, που άνοιγαν σαν σχισμή φωτός μέσα στον υγρό αέρα του κήπου, στέκονταν οι τέσσερις τους χωρίς να μιλούν η Summer, ο Άρης, με τα ακουστικά στα αυτιά, άκουγε έναν υπόκωφο παλμό που κανείς άλλος δεν μπορούσε να αντιληφθεί, ο Edward, χλωμός και ιδρωμένος από τον πυρετό, κρατούσε το όπλο του σφιχτά, σαν να φοβόταν ότι κάτι θα ξεπηδούσε από το ίδιο το φως και ο Αλέξης κοιτούσε πίσω, προς την έπαυλη απ’ όπου μόλις είχαν δραπετεύσει, νιώθοντας πως κάτι είχε μείνει ανολοκλήρωτο. Όταν τελικά πέρασαν το κατώφλι, το φως τους κατάπιε - μόνο για να ξεθωριάσει και να αποκαλύψει ξανά το ίδιο δωμάτιο της έπαυλης, με το ρολόι στον τοίχο να χτυπά την ίδια ακριβώς ώρα. Τα portals είχαν κλείσει. «Δεν το ολοκληρώσαμε», ψιθύρισε η Summer, συνειδητοποιώντας πως η απόδραση δεν ήταν θέμα δύναμης αλλά κατανόησης. Tο δωμάτιο δεν ζητούσε διαφυγή, ζητούσε λύση. Ο Edward έβηξε, ο Άρης έβγαλε αργά τα ακουστικά του λέγοντας πως ο παλμός άλλαξε ρυθμό, και ο Αλέξης έκανε ένα βήμα μπροστά. Αυτή τη φορά δεν θα έτρεχαν προς την έξοδο — θα έμεναν, και με την καθοδήγηση της Summer θα αποκρυπτογραφούσαν το μυστικό της έπαυλης, πριν το Portal αποφασίσει ξανά για τη μοίρα τους.</tw-passagedata></tw-storydata>
+Μπροστά στα παλλαιομένα πέτρινα portals, που άνοιγαν σαν σχισμή φωτός μέσα στον υγρό αέρα του κήπου, στέκονταν οι τέσσερις τους χωρίς να μιλούν η Summer, ο Άρης, με τα ακουστικά στα αυτιά, άκουγε έναν υπόκωφο παλμό που κανείς άλλος δεν μπορούσε να αντιληφθεί, ο Edward, χλωμός και ιδρωμένος από τον πυρετό, κρατούσε το όπλο του σφιχτά, σαν να φοβόταν ότι κάτι θα ξεπηδούσε από το ίδιο το φως και ο Αλέξης κοιτούσε πίσω, προς την έπαυλη απ’ όπου μόλις είχαν δραπετεύσει, νιώθοντας πως κάτι είχε μείνει ανολοκλήρωτο. Όταν τελικά πέρασαν το κατώφλι, το φως τους κατάπιε - μόνο για να ξεθωριάσει και να αποκαλύψει ξανά το ίδιο δωμάτιο της έπαυλης, με το ρολόι στον τοίχο να χτυπά την ίδια ακριβώς ώρα. Τα portals είχαν κλείσει. «Δεν το ολοκληρώσαμε», ψιθύρισε η Summer, συνειδητοποιώντας πως η απόδραση δεν ήταν θέμα δύναμης αλλά κατανόησης. Tο δωμάτιο δεν ζητούσε διαφυγή, ζητούσε λύση. Ο Edward έβηξε, ο Άρης έβγαλε αργά τα ακουστικά του λέγοντας πως ο παλμός άλλαξε ρυθμό, και ο Αλέξης έκανε ένα βήμα μπροστά. Αυτή τη φορά δεν θα έτρεχαν προς την έξοδο — θα έμεναν, και με την καθοδήγηση της Summer θα αποκρυπτογραφούσαν το μυστικό της έπαυλης, πριν το Portal αποφασίσει ξανά για τη μοίρα τους.
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
