@@ -56,18 +56,42 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
   height: auto;
 }
 
+.img-50 {
+
+  max-width: 50%;
+}
+
+.img-65 {
+
+  max-width: 65%;
+}
+
+/* Η αρχική κατάσταση της εικόνας */
+.zoom-hover {
+  transition: transform 0.4s ease-in-out; /* Κάνει το ζουμ ομαλό (παίρνει 0.4 δευτερόλεπτα) */
+  cursor: zoom-in;                        /* Αλλάζει τον κέρσορα σε μεγεθυντικό φακό για να το καταλάβει ο παίκτης */
+  position: relative;
+  z-index: 1;
+}
+
+/* Τι γίνεται όταν το ποντίκι πάει πάνω στην εικόνα */
+.zoom-hover:hover {
+  transform: scale(1.6); /* Μεγαλώνει την εικόνα κατά 60%. Μπορείς να το κάνεις 1.5, 1.8, 2.0 κλπ. */
+  z-index: 100;          /* Βεβαιώνει ότι η εικόνα θα βγει ΠΑΝΩ από το κείμενο καθώς μεγαλώνει */
+}
+
 /* Το δεξί τμήμα με το κείμενο */
 .right-text {
   flex: 1;
   line-height: 1.3;
   padding: 15px;
   color: #c1c4c9;
+  font-size: 1.2rem
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="the-mansion-bg-fade" color="red"></tw-tag><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
     var audio = new Audio(&#39;https://github.com/fuhton/piano-mp3/blob/master/piano-mp3/A0.mp3?raw=true&#39;);
     audio.play();
     
 &lt;/script&gt;
-
 &lt;div class=&quot;right-text&quot;&gt;
 &#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
@@ -75,14 +99,19 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39;
 Βρισκόμαστε στην κεντρική τραπεζαρία της έπαυλης του κ. Evergreen. Η τραπεζαρία είναι ένας απέραντος χώρος όπου στη μια του άκρη υπάρχουν 3 παράθυρα με θέα τον κήπο. Υπάρχουν δυο μεγάλοι καναπέδες με έντονα σκάλίσματα στο ξύλο, γκρι με flo ροζ και στο κέντρο το τζάκι πάνω από το οποίο υπάρχει ένας πίνακας. Μικρά λεύκα αγαλματίδια λιονταριού με μαύρες πιτζιλές βρίσκονται στο πρεβάζι του τζακιού. Απέναντι ακριβώς από το τζάκι βρίσκεται μια τεράστια ξύλινη τραπεζαρία με μεταξωτό κόκκινο τραπεζομάντηλο και ακριβώς από πάνω ένας μεγάλος πολυέλαιος baccarat σε χρυσές και nude αποχρώσεις.
-
+&lt;/div&gt;
+ &lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-65 zoom-hover&quot; src=&quot;the_mansion_the_sims_2.jpg&quot; width=700 height=400&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
 Κάποιοι είναι όρθοι, κάποιοι κάθονται στους καναπές και ένας ξαπωστένει στο πλαί της καρέκλας. Μπορούμε να δούμε, τον Αλέξη, τον Edward Morgan, τον Άρη Κάλφα και τη Summer.
 
-[[Άρης]] 
+[[Άρης]]
+&lt;-- hover to zoom
 &lt;/div&gt;
- &lt;div class=&quot;left-image-box&quot;&gt;
-&lt;img src=&quot;the_mansion_the_sims_2.jpg&quot; width=1050 height=550&gt; 
 &lt;/div&gt;
+
 </tw-passagedata><tw-passagedata pid="2" name="Summer" tags="the-mansion-bg-fade" position="750,25" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
   &lt;div class=&quot;left-image-box&quot;&gt;
     &lt;img src=&quot;summer_sofa.jpg&quot; alt=&quot;aris_drink&quot;&gt;
@@ -175,7 +204,12 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
   &lt;/div&gt;
   
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="6" name=" Άρης1" tags="" position="350,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+</tw-passagedata><tw-passagedata pid="6" name=" Άρης1" tags="the-mansion-bg-fade" position="350,150" size="100,100"> &lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50&quot;  src=&quot;the_gun.png&quot; width=525 height=225&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -195,7 +229,10 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 Την ίδια προειδοποίηση κάνει διακριτικά και στους υπόλοιπους για να τους προστατεύσει.
 
 
-[[Summer | Summer1]]</tw-passagedata><tw-passagedata pid="7" name=" Summer1" tags="" position="550,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Summer | Summer1]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Summer1" tags="the-mansion-bg-fade" position="550,150" size="100,100">&lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -205,13 +242,21 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Summer: &#39;&#39;Τo trial ! Για την ασθένεια ... Τελος πάντων... 
 Νομίζω δεν έχουν σημασία οι λεπτομέρειες.
-
+&lt;/div&gt;
+ &lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;zoom-hover&quot; src=&quot;summer_gears_earthquake.png&quot; width=700 height=400&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Γυρίζει και απευθύνεται προς όλους.
 
 &#39;&#39;Διάλογος / Δράση &#39;&#39; 
 &#39;&#39;Summer: &#39;&#39;Για να είστε εδώ πρέπει να είμαστε στο ίδιο στάδιο και οι πόρτες δεν θα ανοίξουν αν δεν λύσουμε το γρύφο. Είναι απλά μια δοκιμασία, όλα θα περάσουν αρκεί να βρούμε πως τα πράγματα λειτουργούν αυτή τη φορά.
-
+&lt;--- hover to zoom
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Απευθύνεται πίσω στον Edward.
 
@@ -221,8 +266,8 @@ body, tw-story[tags~="the-mansion-bg-fade"] {
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Πριν προλάβει να ολοκληρώσει την ερώτηση. Ένας μεγάλος σεισμός ταρακουνάει τους χαρακτήρες και πέφτουν κάτω, το δωμάτιο χωρίζεται στα δυο με μια σχισμή αρχίζει να κινείται μια δεξιά στο χώρο του σαλονιού με τον Άρη, τη Summer και τον Edward και μια αριστερά προς τον Αλέξη σαν ζυγαριά. Τα πάντα πέφτουν στο πάτωμα, βιβλία, τα μαρμάρινα λιοντάρια του τζακιού και οι καρέκλες... Μόνο ένα στέκεται άθικτο όσο δυνατό και αν είναι το τράνταγμα. Ο πίνακς πάνω από το τζάκι «Μερικές φορές το μόνο που σε δεσμεύει είναι ο εαυτός  σου».
 
-
-[[Αλέξης | Αλέξης1]]</tw-passagedata><tw-passagedata pid="8" name=" Αλέξης1" tags="" position="750,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Αλέξης | Αλέξης1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name=" Αλέξης1" tags="" position="750,150" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
