@@ -84,6 +84,19 @@ tw-story[tags~="white-portals"]{
 }
 
 
+tw-story[tags~="portals-fade"]{
+	 background-image: url("the_mansion_garden_portals.jpg");
+   /* Κάνει την εικόνα να καλύπτει όλη την οθόνη χωρίς να επαναλαμβάνεται σαν πλακάκι */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  /* Κεντράρει την εικόνα */
+  background-position: center;
+  
+  /* (Προαιρετικό) Κρατάει την εικόνα σταθερή αν το κείμενο είναι μεγάλο και κάνεις scroll */
+  background-attachment: fixed; 
+}
+
 /* Το κεντρικό container */
 .image-text-stretch {
   display: flex;
@@ -144,7 +157,7 @@ tw-story[tags~="white-portals"]{
   line-height: 1.3;
   padding: 15px;
   font-size: 1.2rem
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="the-mansion-bg-fade" color="purple"></tw-tag><tw-tag name="bg-character" color="green"></tw-tag><tw-tag name="alexis-scared-summer" color="orange"></tw-tag><tw-tag name="the-mansion-bg-fade-eqk" color="blue"></tw-tag><tw-tag name="white-portals" color="yellow"></tw-tag><tw-tag name="the-mansion-bg-fade-eqk-red" color="red"></tw-tag><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="the-mansion-bg-fade" color="purple"></tw-tag><tw-tag name="bg-character" color="green"></tw-tag><tw-tag name="alexis-scared-summer" color="orange"></tw-tag><tw-tag name="the-mansion-bg-fade-eqk" color="blue"></tw-tag><tw-tag name="white-portals" color="yellow"></tw-tag><tw-tag name="the-mansion-bg-fade-eqk-red" color="red"></tw-tag><tw-tag name="portals-fade" color="green"></tw-tag><tw-passagedata pid="1" name="TheBegining" tags="" position="1150,25" size="100,100">&lt;script&gt;
     var audio = new Audio(&#39;https://github.com/fuhton/piano-mp3/blob/master/piano-mp3/A0.mp3?raw=true&#39;);
     audio.play();
     
@@ -470,7 +483,13 @@ tw-story[tags~="white-portals"]{
 
 [[Άρης | Άρης3]]
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name=" Άρης3" tags="" position="350,400" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name=" Άρης3" tags="the-mansion-bg-fade-eqk" position="350,400" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+   &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50&quot;  src=&quot;the_gun.png&quot; width=525 height=225&gt; 
+&lt;/div&gt;
+
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -484,8 +503,14 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Άρης: &#39;&#39;Summer, είσαι καλά; Δείχνεις λίγο ταραγμένη... ελπίζω να μην ταράχτηκες με το όπλο του Edward. Ο Αλέξης και εγώ είμαστε εδώ για σένα.
 
-
-[[Summer | Summer3]]</tw-passagedata><tw-passagedata pid="15" name=" Summer3" tags="" position="550,400" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Summer | Summer3]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" Summer3" tags="the-mansion-bg-fade-eqk" position="550,400" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50&quot;  src=&quot;the_gun.png&quot; width=525 height=225&gt; 
+&lt;/div&gt;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -501,8 +526,14 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Summer: &#39;&#39;// Θα έπρεπε να είναι μέρος της δοκιμασίας... μηχανισμοί. Όμως φαίνεται να νοιάζονται... αν και είναι από άλλο κόσμο. Ακόμα και ο Edward διαισθάνθηκε τον κίνδυνο και ήταν έτοιμος να δράσει. Ίσως δεν διαφέρουμε τόσο...και τώρα ένα κλειδί. Αν υπάρχει λύση, δεν μπορώ να τη βρω μόνη αυτή τη φορά. Αυτή τη φορά είναι χάος και μάλλον η δοκιμασία απαιτεί συνεργασία // Είναι απλά αρκετά ... χρειάζομαι χρόνο να σκεφτώ. Συνήθως τα πράγματα είναι πιο ξεκάθαρα ... απλά δίνει το armour και weapons και εξαφανίζεται...όμως είναι ξεκάθαρο. Συνήθως είναι μάχη.
 
-
-[[Αλέξης | Αλέξης3]]</tw-passagedata><tw-passagedata pid="16" name=" Αλέξης3" tags="" position="750,400" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Αλέξης | Αλέξης3]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name=" Αλέξης3" tags="the-mansion-bg-fade-eqk" position="750,400" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50&quot;  src=&quot;the_gun.png&quot; width=525 height=225&gt; 
+&lt;/div&gt;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -518,8 +549,14 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Αλέξης: &#39;&#39;Summer  τι είναι αυτά που λες, μας παγίδευσαν εδώ για να σκωτοθούμε. Παιδιά εγώ προσπωπικά θα κάνω τα αδύνατα δυνατά για να φύγω απο εδώ πέρα, ίσως το υπόγειο να έχει κάποια εναλακτική έξοδο διαφυγείς, νομίζω είναι η μόνη μας λύση για να φύγουμε.
 
-
-[[Edward | Edward3]]</tw-passagedata><tw-passagedata pid="17" name=" Edward3" tags="" position="950,400" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Edward | Edward3]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name=" Edward3" tags="the-mansion-bg-fade-eqk" position="950,400" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;img-50&quot;  src=&quot;the_gun.png&quot; width=525 height=225&gt; 
+&lt;/div&gt;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Νύχτα 
 
@@ -535,8 +572,12 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39;
 Πληκτρολογεί το 21 και λίγο δίπλα από το τζάκι ανοίγει μια μυστική καταπακτή.
 
+[[Άρης | Άρης4]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name=" Άρης4" tags="the-mansion-bg-fade-eqk" position="950,525" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
 
-[[Άρης | Άρης4]]</tw-passagedata><tw-passagedata pid="18" name=" Άρης4" tags="" position="950,525" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα
 
@@ -547,8 +588,12 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Άρης: &#39;&#39; Μέσα από την καταπακτή, πιάνω ένα σήμα, το ακούω ανεπαίσθητα αλλά υπάρχει. // μου θυμίζει εκείνες //. Είναι σκοτεινά όμως. Έχει κάποιος κάτι μαζί του για να φωτίσουμε τον δρόμο; Αλέξη, Edward, Summer; //εδώ θα ήταν χρήσιμο ένα ξόρκι από την summer όπως αυτό του γκάνταλφ όταν μπήκαν στα ορυχεία της Μόρια... μόλις συνειδοτοποίησα ότι μετά έπεσαν στον balrog.. ελπίζω να μην έχουμε το ίδιο τέλος//
 
+[[Summer | Summer4]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name=" Summer4" tags="the-mansion-bg-fade-eqk" position="750,525" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
 
-[[Summer | Summer4]]</tw-passagedata><tw-passagedata pid="19" name=" Summer4" tags="" position="750,525" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα
 
@@ -564,12 +609,17 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 &#39;&#39;Summer: &#39;&#39;Για εμένα... είναι η ασθένεια και έχω κάποιον που με καθοδηγεί. Αν αναρωτηθείτε ποιος σας έφερε εδώ... ίσως αυτός είναι ο δικός σας.
 
-[[Αλέξης | Αλέξης4]]</tw-passagedata><tw-passagedata pid="20" name=" Αλέξης4" tags="" position="550,525" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Αλέξης | Αλέξης4]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name=" Αλέξης4" tags="the-mansion-bg-fade-eqk" position="550,525" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
-Έχοντας πάρι τον δρόμο της κατηφόρας πλέον ο Αλέξης πίστευαι ότι πλησιάζει και το τέλος αυτής της ιστοριάς. Αλλά τα λεγόμενα τις Summer του άνοιξαν νέες περιπέτειες.
+Έχοντας πάρι τον δρόμο της κατηφόρας πλέον ο Αλέξης πίστευει ότι πλησιάζει και το τέλος αυτής της ιστοριάς. Αλλά τα λεγόμενα τις Summer του άνοιξαν νέες περιπέτειες.
 
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39; 
 Ίσως να ήταν μια νέα περιπέτεια στην προσωπική του ζωή που τον είχε τραματίσει και τον είχε ρίξει σε αυτή την μίζερη και μονότονη ζωή που είχε αποκτήσει. Αλλά πλέον το βλέμμα αυτό του έρωτα  δεν ήταν της Κατερίνας αλλά μια κοπέλας που δέθηκε 
@@ -582,7 +632,12 @@ tw-story[tags~="white-portals"]{
 Έντρομος ο Αλέξης ακωλουθεί τους υπόλοιπους για να αντρικρίσουν κάτι καινούργιο!!! 
 Πιθανόν την ελευθερίας τους ή και όχι...
 
-[[Edward | Edward4]]</tw-passagedata><tw-passagedata pid="21" name=" Edward4" tags="" position="350,525" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Edward | Edward4]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name=" Edward4" tags="the-mansion-bg-fade-eqk" position="350,525" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα 
 
@@ -598,8 +653,12 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 // 5 Διαφορετικοί χώροι... έτσι εξηγείται.// Έχει κανείς ιδέα για το πως θα βρούμε το επόμενο στοιχείο? Λίγο το σήμα, λίγο ο καθοδηγητής, όλο και κάτι θα πρέπει να ξέρετε.
 
+[[Άρης | Άρης5]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name=" Άρης5" tags="" position="350,650" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
 
-[[Άρης | Άρης5]]</tw-passagedata><tw-passagedata pid="22" name=" Άρης5" tags="" position="350,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα 
 
@@ -616,7 +675,12 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
 Έχει κανείς ιδέα για το πως θα βγούμε έξω; Κάτι βλέπω στο πάτωμα.. και ανάψτε κάνα φως εδώ μέσα θα σκοτωθούμε!!
 
-[[Summer | Summer5]]</tw-passagedata><tw-passagedata pid="23" name=" Summer5" tags="white-portals" position="550,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Summer | Summer5]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name=" Summer5" tags="white-portals" position="550,650" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ 
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Χάραμα
 
@@ -633,7 +697,12 @@ tw-story[tags~="white-portals"]{
 Κοιτάζοντας τριγύρω αποτυγχάνει να βρει καποιον διακόπτη και χωρίς να γνωρίζει πως, δυο λέξεις εκφωνούνται από την ίδια &quot;lumen clarius&quot;, ο σταυρός λάμπει και στη συνέχεια ένα φως καλύπτει όλο το δωμάτιο και στέκεται πάνω από τα κεφάλια τους.
 Μια καταπακτη μπροστά τους.
 
-[[Αλέξης | Αλέξης5]]</tw-passagedata><tw-passagedata pid="24" name=" Αλέξης5" tags="" position="750,650" size="100,100">&#39;&#39;Σκηνή πρώτη &#39;&#39;
+[[Αλέξης | Αλέξης5]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" Αλέξης5" tags="" position="750,650" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ 
+  &lt;div class=&quot;right-text&quot;&gt;
+&#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Πρωί
 
@@ -649,7 +718,9 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Διάλογος / Δράση &#39;&#39;
  Παιδία φαίνεται να  μας έμεινε μονο το παραθυράκι για την απόλυτη &quot;ελευθερία&quot; . Τι κάνουμε; Είμαστε έτοιμοι για την &quot;έξοδο&quot; ή θα μπούμε σε μια νέα τάξη γεγονότων;
 
-[[Edward | Edward5]]</tw-passagedata><tw-passagedata pid="25" name=" Edward5" tags="white-portals" position="950,650" size="100,100">&lt;div class=&quot;right-text-no-color&quot;&gt;
+[[Edward | Edward5]]
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name=" Edward5" tags="white-portals" position="950,650" size="100,100">&lt;div class=&quot;right-text-no-color&quot;&gt;
 &#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εσωτερικό \ Εξωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Πρωί
@@ -671,20 +742,24 @@ tw-story[tags~="white-portals"]{
 &#39;&#39;Edward:&#39;&#39; // Ο Reaper φαίνεται να με καθοδήγησε σωστά όμως δεν μπορώ να τον δω, ίσως μόνο η Summer να μπορεί να τον δει.// Μάλλον ο καθένας μας πρέπει να μπει στο δικό του portal. Τι λέτε περνάμε? …….
 
 [[To be continued]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="To be continued" tags="" position="1150,650" size="100,100">&lt;div class=&quot;right-text&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="To be continued" tags="portals-fade" position="1150,650" size="100,100">&lt;div class=&quot;image-text-stretch&quot;&gt;
+ &lt;div class=&quot;left-image-box&quot;&gt;
+&lt;img class=&quot;zoom-hover&quot; src=&quot;the_mansion_the_sims_2_no_bg.png&quot; width=500 height=200&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right-text&quot;&gt;
 &#39;&#39;Σκηνή πρώτη &#39;&#39;
 &#39;&#39;Τοποθεσία:&#39;&#39; Εξωτερκό / Εσωτερικό
 &#39;&#39;Χρόνος:&#39;&#39; Πρωί / Νύχτα
-&lt;/div&gt;
-&lt;div class=&quot;image-text-stretch&quot;&gt;
- &lt;div class=&quot;left-image-box&quot;&gt;
-&lt;img class=&quot;img-50 zoom-hover&quot; src=&quot;the_mansion_the_sims_2.jpg&quot; width=500 height=200&gt;
-&lt;/div&gt;
-&lt;div class=&quot;right-text&quot;&gt;
+
 &#39;&#39;Αφηγηματικό μέρος – Περιγραφή &#39;&#39;
-Μπροστά στα παλλαιομένα πέτρινα portals, που άνοιγαν σαν σχισμή φωτός μέσα στον υγρό αέρα του κήπου, στέκονταν οι τέσσερις τους χωρίς να μιλούν η Summer, ο Άρης, με τα ακουστικά στα αυτιά, άκουγε έναν υπόκωφο παλμό που κανείς άλλος δεν μπορούσε να αντιληφθεί, ο Edward, χλωμός και ιδρωμένος από τον πυρετό, κρατούσε το όπλο του σφιχτά, σαν να φοβόταν ότι κάτι θα ξεπηδούσε από το ίδιο το φως και ο Αλέξης κοιτούσε πίσω, προς την έπαυλη απ’ όπου μόλις είχαν δραπετεύσει, νιώθοντας πως κάτι είχε μείνει ανολοκλήρωτο. Όταν τελικά πέρασαν το κατώφλι, το φως τους κατάπιε - μόνο για να ξεθωριάσει και να αποκαλύψει ξανά το ίδιο δωμάτιο της έπαυλης, με το ρολόι στον τοίχο να χτυπά την ίδια ακριβώς ώρα. Τα portals είχαν κλείσει. «Δεν το ολοκληρώσαμε», ψιθύρισε η Summer, συνειδητοποιώντας πως η απόδραση δεν ήταν θέμα δύναμης αλλά κατανόησης. Tο δωμάτιο δεν ζητούσε διαφυγή, ζητούσε λύση. Ο Edward έβηξε, ο Άρης έβγαλε αργά τα ακουστικά του λέγοντας πως ο παλμός άλλαξε ρυθμό, και ο Αλέξης έκανε ένα βήμα μπροστά. Αυτή τη φορά δεν θα έτρεχαν προς την έξοδο — θα έμεναν, και με την καθοδήγηση της Summer θα αποκρυπτογραφούσαν το μυστικό της έπαυλης, πριν το Portal αποφασίσει ξανά για τη μοίρα τους.
+Μπροστά στα παλλαιομένα πέτρινα portals, που άνοιγαν σαν σχισμή φωτός μέσα στον υγρό αέρα του κήπου, στέκονταν οι τέσσερις τους χωρίς να μιλούν η Summer, ο Άρης, με τα ακουστικά στα αυτιά, άκουγε έναν υπόκωφο παλμό που κανείς άλλος δεν μπορούσε να αντιληφθεί, ο Edward, χλωμός και ιδρωμένος από τον πυρετό, κρατούσε το όπλο του σφιχτά, σαν να φοβόταν ότι κάτι θα ξεπηδούσε από το ίδιο το φως και ο Αλέξης κοιτούσε πίσω, προς την έπαυλη απ’ όπου μόλις είχαν δραπετεύσει, νιώθοντας πως κάτι είχε μείνει ανολοκλήρωτο. Όταν τελικά πέρασαν το κατώφλι, το φως τους κατάπιε - μόνο για να ξεθωριάσει και να αποκαλύψει ξανά το ίδιο δωμάτιο της έπαυλης, με το ρολόι στον τοίχο να χτυπά την ίδια ακριβώς ώρα.
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;/div&gt;
+
+&lt;div class=&quot;right-text&quot;&gt;
+Τα portals είχαν κλείσει. «Δεν το ολοκληρώσαμε», ψιθύρισε η Summer, συνειδητοποιώντας πως η απόδραση δεν ήταν θέμα δύναμης αλλά κατανόησης. Tο δωμάτιο δεν ζητούσε διαφυγή, ζητούσε λύση. Ο Edward έβηξε, ο Άρης έβγαλε αργά τα ακουστικά του λέγοντας πως ο παλμός άλλαξε ρυθμό, και ο Αλέξης έκανε ένα βήμα μπροστά. Αυτή τη φορά δεν θα έτρεχαν προς την έξοδο — θα έμεναν, και με την καθοδήγηση της Summer θα αποκρυπτογραφούσαν το μυστικό της έπαυλης, πριν το Portal αποφασίσει ξανά για τη μοίρα τους.
+&lt;/div&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
